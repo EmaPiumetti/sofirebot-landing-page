@@ -32,21 +32,21 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-emerald-100 sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-md border-b border-pink-100 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
               <Heart className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-800">SofiRobot</span>
+            <span className="text-2xl font-bold text-gray-800">Sofi Rebot</span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="#about" className="text-gray-600 hover:text-emerald-600 transition-colors">Sobre Mí</a>
-            <a href="#program" className="text-gray-600 hover:text-emerald-600 transition-colors">Programa</a>
-            <a href="#testimonials" className="text-gray-600 hover:text-emerald-600 transition-colors">Testimonios</a>
-            <a href="#apply" className="text-gray-600 hover:text-emerald-600 transition-colors">Aplicar</a>
+            <a href="#about" className="text-gray-600 hover:text-pink-600 transition-colors">Sobre Mí</a>
+            <a href="#program" className="text-gray-600 hover:text-pink-600 transition-colors">Programa</a>
+            <a href="#testimonials" className="text-gray-600 hover:text-pink-600 transition-colors">Testimonios</a>
+            <a href="#apply" className="text-gray-600 hover:text-pink-600 transition-colors">Aplicar</a>
           </nav>
         </div>
       </header>
@@ -59,12 +59,12 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Badge className="mb-6 bg-emerald-100 text-emerald-800 hover:bg-emerald-200">
+            <Badge className="mb-6 bg-pink-100 text-pink-800 hover:bg-pink-200">
               ✨ Nutrición Integral para Atletas de Alto Rendimiento
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Desbloquea tu
-              <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent"> Máximo Potencial</span>
+              <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent"> Máximo Potencial</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Transforma tu rendimiento en CrossFit y tu bienestar general con un enfoque integral de nutrición, 
@@ -73,13 +73,13 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 text-lg"
+                className="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white px-8 py-4 text-lg"
                 onClick={() => document.getElementById('apply').scrollIntoView({ behavior: 'smooth' })}
               >
                 Agenda tu Sesión Estratégica Gratuita
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-emerald-600 text-emerald-600 hover:bg-emerald-50">
+              <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-pink-600 text-pink-600 hover:bg-pink-50">
                 Ver Video de Presentación
               </Button>
             </div>
@@ -97,34 +97,37 @@ function App() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-2">25K+</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">25K+</div>
               <div className="text-gray-600">Seguidores en Instagram</div>
             </motion.div>
             <motion.div
+              className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-2">100+</div>
-              <div className="text-gray-600">Clientes Transformados</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">500+</div>
+              <div className="text-gray-600">Atletas Transformados</div>
             </motion.div>
             <motion.div
+              className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-2">5+</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">5+</div>
               <div className="text-gray-600">Años de Experiencia</div>
             </motion.div>
             <motion.div
+              className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-2">98%</div>
+              <div className="text-4xl font-bold text-pink-600 mb-2">98%</div>
               <div className="text-gray-600">Satisfacción de Clientes</div>
             </motion.div>
           </div>
@@ -142,32 +145,33 @@ function App() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Soy SofiRobot, tu Nutricionista Integral
+                Soy Sofi Rebot, tu Nutricionista Integral
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Mi historia comenzó como la tuya: entrenando duro, comiendo "sano", pero sin ver los resultados que esperaba. 
-                Después de años de frustración, descubrí que el problema no era mi esfuerzo, sino mi enfoque.
+                Inicié mis estudios en medicina, pero después de 2 años me di cuenta de que esa carrera estaba enfocada en la enfermedad y no en la salud, 
+                que es lo que realmente me apasiona.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Desarrollé un sistema integral que combina nutrición personalizada, suplementación inteligente y 
-                optimización de hábitos. No solo transformé mi propio cuerpo y rendimiento, sino que ahora ayudo 
-                a atletas como tú a alcanzar su máximo potencial.
+                Por eso decidí cambiar mi rumbo y me convertí en Licenciada en Nutrición. Desarrollé un sistema integral que combina nutrición personalizada, 
+                suplementación inteligente y optimización de hábitos. No solo transformé mi propio cuerpo y rendimiento, sino que ahora ayudo 
+                a atletas como tú a alcanzar su máximo potencial, enfocándome siempre en la salud y el bienestar integral.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600" />
-                  <span className="text-gray-700">Nutricionista Certificada</span>
+                  <CheckCircle className="w-5 h-5 text-pink-600" />
+                  <span className="text-gray-700">Licenciada en Nutrición</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <CheckCircle className="w-5 h-5 text-pink-600" />
                   <span className="text-gray-700">Especialista en CrossFit</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <CheckCircle className="w-5 h-5 text-pink-600" />
                   <span className="text-gray-700">Experta en Suplementación</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <CheckCircle className="w-5 h-5 text-pink-600" />
                   <span className="text-gray-700">Mi Propio Caso de Éxito</span>
                 </div>
               </div>
@@ -216,7 +220,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              El Código SofiRobot
+              El Código Sofi Rebot
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Un programa de transformación integral de 3-6 meses que combina nutrición personalizada, 
@@ -231,10 +235,10 @@ function App() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full border-emerald-200 hover:shadow-lg transition-shadow">
+              <Card className="h-full border-pink-200 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                    <Target className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                    <Target className="w-6 h-6 text-pink-600" />
                   </div>
                   <CardTitle className="text-xl">Nutrición Personalizada</CardTitle>
                   <CardDescription>
@@ -244,15 +248,15 @@ function App() {
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Evaluación inicial profunda</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Plan evolutivo y ajustable</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Recetas y ejemplos de comidas</span>
                     </li>
                   </ul>
@@ -266,10 +270,10 @@ function App() {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full border-emerald-200 hover:shadow-lg transition-shadow">
+              <Card className="h-full border-pink-200 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                    <Dumbbell className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                    <Dumbbell className="w-6 h-6 text-pink-600" />
                   </div>
                   <CardTitle className="text-xl">Suplementación Inteligente</CardTitle>
                   <CardDescription>
@@ -279,15 +283,15 @@ function App() {
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Análisis de necesidades específicas</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Recomendaciones de productos</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Timing y dosificación óptima</span>
                     </li>
                   </ul>
@@ -301,10 +305,10 @@ function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full border-emerald-200 hover:shadow-lg transition-shadow">
+              <Card className="h-full border-pink-200 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                    <Clock className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                    <Clock className="w-6 h-6 text-pink-600" />
                   </div>
                   <CardTitle className="text-xl">Acompañamiento Continuo</CardTitle>
                   <CardDescription>
@@ -314,15 +318,15 @@ function App() {
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Sesiones individuales semanales</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Acceso directo vía WhatsApp</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle className="w-4 h-4 text-pink-600" />
                       <span className="text-sm">Comunidad privada exclusiva</span>
                     </li>
                   </ul>
@@ -347,7 +351,7 @@ function App() {
               Historias de Transformación
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Conoce a algunos de los atletas que han transformado su rendimiento y bienestar con El Código SofiRobot
+              Conoce a algunos de los atletas que han transformado su rendimiento y bienestar con El Código Sofi Rebot
             </p>
           </motion.div>
 
@@ -366,11 +370,11 @@ function App() {
                     ))}
                   </div>
                   <p className="text-gray-600 mb-4 italic">
-                    "En 4 meses con SofiRobot mejoré mis marcas en un 40% y finalmente entendí cómo nutrir mi cuerpo correctamente. 
+                    "En 4 meses con Sofi Rebot mejoré mis marcas en un 40% y finalmente entendí cómo nutrir mi cuerpo correctamente. 
                     Su enfoque integral cambió mi vida."
                   </p>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
                       M
                     </div>
                     <div>
@@ -390,17 +394,17 @@ function App() {
             >
               <Card className="h-full">
                 <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+                  <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
                   <p className="text-gray-600 mb-4 italic">
-                    "Después de años de dietas yo-yo, SofiRobot me enseñó a tener una relación saludable con la comida. 
+                    "Después de años de dietas yo-yo, Sofi Rebot me enseñó a tener una relación saludable con la comida. 
                     Perdí 15kg y gané músculo sin restricciones extremas."
                   </p>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
                       C
                     </div>
                     <div>
@@ -420,17 +424,17 @@ function App() {
             >
               <Card className="h-full">
                 <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+                  <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
                   <p className="text-gray-600 mb-4 italic">
-                    "La suplementación inteligente que me recomendó SofiRobot fue un game-changer. Mi recuperación mejoró 
+                    "La suplementación inteligente que me recomendó Sofi Rebot fue un game-changer. Mi recuperación mejoró 
                     drasticamente y mi energía está en otro nivel."
                   </p>
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
                       A
                     </div>
                     <div>
@@ -559,8 +563,8 @@ function App() {
 
                     <Button 
                       type="submit" 
-                      size="lg" 
-                      className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-4 text-lg"
+                      className="w-full bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white py-3"
+                      onClick={handleSubmit}
                     >
                       Enviar Aplicación y Agendar Sesión Gratuita
                       <ArrowRight className="ml-2 w-5 h-5" />
@@ -579,10 +583,10 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center">
                   <Heart className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">SofiRobot</span>
+                <span className="text-xl font-bold">Sofi Rebot</span>
               </div>
               <p className="text-gray-400">
                 Transformando vidas a través de la nutrición integral y el entrenamiento inteligente.
@@ -591,10 +595,10 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Sígueme</h3>
               <div className="space-y-2">
-                <a href="https://www.instagram.com/sofirebot" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-emerald-400 transition-colors">
+                <a href="https://www.instagram.com/sofirebot" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-pink-400 transition-colors">
                   Instagram: @sofirebot
                 </a>
-                <a href="#" className="block text-gray-400 hover:text-emerald-400 transition-colors">
+                <a href="#" className="block text-gray-400 hover:text-pink-400 transition-colors">
                   WhatsApp: +54 9 11 1234-5678
                 </a>
               </div>
@@ -607,7 +611,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 SofiRobot. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Sofi Rebot. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
